@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./App.css";
+
 function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
@@ -73,6 +75,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>Things to do:</h1>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
